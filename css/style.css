@@ -1,3 +1,10 @@
+.index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 body, article {
   margin: 0;
   line-height: 1.5em;
@@ -20,15 +27,16 @@ article h1 a:active {
   color: #ecece7;
 }
 
-h1 {
+/* h1 {
   margin-top: 0em;
-  /* text-align: center; */
+  max-width: max-content;
+  text-align: center;
   border-radius: 7px;
   padding: 7px;
   color: #ecece7;
   background: #2b2b2c;
-}
-
+} */
+h1,
 h2,
 h3,
 h4,
@@ -44,14 +52,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
-  text-transform: capitalize;
+  font-weight: 800;
   margin-bottom: 0;
   line-height: 1.2em;
 }
-
 a:link {
-  font-weight: bolder;
+  font-weight: bold;
   color: #005387;
   text-decoration: none;
 }
@@ -77,7 +83,8 @@ footer section {
 /* Navigation panel */
 nav {
   color: #2b2b2c;
-  line-height: 3em;
+  line-height: 2em;
+  border-bottom: 1px solid #2b2b2c40;
 }
 
 nav a {
@@ -104,7 +111,7 @@ nav a:active {
 more,
 .more:link,
 .more:visited {
-  color: #2b2b2c;
+  color: #005387;
 }
 
 article h2 a:link,
@@ -116,6 +123,7 @@ article h2 a:active {
 
 p.meta {
   margin-top: 0;
+  margin-bottom: 0;
   font-size: 0.8em;
   color: #2b2b2c;
   font-style: italic;
